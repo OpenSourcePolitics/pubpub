@@ -10,4 +10,4 @@ export function generateAuthToken() {
 	return firebaseSecret;
 }
 
-export const fireBaseURL = (process.env.NODE_ENV === 'production') ? process.env.FIREBASE_URL : 'https://pubpub-dev.firebaseio.com/';
+export const fireBaseURL = (process.env.NODE_ENV === 'production') ? process.env.FIREBASE_URL : require('../config').firebaseUrl ;

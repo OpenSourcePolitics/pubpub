@@ -55,14 +55,12 @@ const PubCreateForm = React.createClass({
 					<input key="pubCreateSlug" style={styles.input} type="text" placeholder={this.props.intl.formatMessage(globalMessages.url)} {...slug}/>
 				</div>
 
-				{(!__DEVELOPMENT__) ? 
 				<div style={styles.recaptcha}>
 					<ReCAPTCHA
 						ref="recaptcha"
-						sitekey="6LfvjiATAAAAAGTr6B2nWzkOMBReIkt_XKheE1cz"
+						sitekey="6Lf0GSITAAAAAFPhrAPQr2mggM6U_XtBwfamVc4i"
 						onChange={this.onCaptchaChange} />
 				</div>
-				: null }
 
 				<button type="submit" key="pubCreateSubmit" style={styles.submit(this.state.recaptchaToken)}>
 					<FormattedMessage {...globalMessages.create} />
